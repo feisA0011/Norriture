@@ -21,6 +21,25 @@ npm run build
 npm run start
 ```
 
+
+## Deploy now (fastest)
+### One-time setup
+```bash
+npm i -g vercel
+vercel login
+vercel link
+```
+
+### Production deploy
+```bash
+npm run deploy:vercel
+```
+
+Or use the helper script:
+```bash
+npm run deploy:vercel:script
+```
+
 ## Deploy to Vercel (exact steps)
 1. Push this repo to GitHub/GitLab/Bitbucket.
 2. Go to Vercel dashboard → **Add New Project**.

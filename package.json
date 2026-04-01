@@ -6,7 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "deploy:vercel": "vercel --prod",
+    "deploy:vercel:script": "bash scripts/deploy-vercel.sh"
   },
   "dependencies": {
     "class-variance-authority": "^0.7.1",
