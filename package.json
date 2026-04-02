@@ -9,7 +9,8 @@
     "lint": "next lint",
     "deploy:vercel": "bash scripts/deploy-vercel.sh",
     "deploy:vercel:script": "bash scripts/deploy-vercel.sh",
-    "deploy:vercel:quick": "vercel --prod"
+    "deploy:vercel:quick": "vercel --prod",
+    "check:merge-conflicts": "bash scripts/check-merge-conflicts.sh"
   },
   "dependencies": {
     "class-variance-authority": "^0.7.1",

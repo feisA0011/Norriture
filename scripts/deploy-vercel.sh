@@ -6,6 +6,9 @@ if ! command -v vercel >/dev/null 2>&1; then
   exit 1
 fi
 
+echo "==> Checking repository for unresolved merge conflicts"
+bash scripts/check-merge-conflicts.sh
+
 echo "==> Ensuring project is linked to Vercel"
 if [ ! -d ".vercel" ]; then
   vercel link --yes

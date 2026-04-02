@@ -71,6 +71,14 @@ SUPABASE_ANON_KEY=
 
 
 ## Fix `404: NOT_FOUND` now
+
+### Merge-conflict precheck (required)
+Before deployment, run:
+```bash
+npm run check:merge-conflicts
+```
+This catches unresolved Git markers like `<<<<<<<`, `=======`, and `>>>>>>>` that can break Vercel deploys.
+
 Run these commands from the repo root in WSL:
 
 ```bash
